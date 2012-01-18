@@ -1,0 +1,322 @@
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\documentclass[letterpaper]{article}
+
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{url}
+
+% Comment the following lines to use the default Computer Modern font
+% instead of the Palatino font provided by the mathpazo package.
+% Remove the 'osf' bit if you don't like the old style figures.
+\usepackage[T1]{fontenc}
+\usepackage[sc,osf]{mathpazo}
+
+% Set your name here
+\def\name{Alexander Pak}
+
+% Replace this with a link to your CV if you like, or set it empty
+% (as in \def\footerlink{}) to remove the link in the footer:
+\def\footerlink{}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={6.5in, 8.5in},
+  left=1.0in,
+  top=1.25in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{0.6em}
+  }
+}{
+  \end{list}
+}
+
+\begin{document}
+
+% Place name at left
+{\huge \name}
+
+% Alternatively, print name centered and bold:
+%\centerline{\huge \bf \name}
+
+\vspace{0.25in}
+
+\begin{minipage}{0.45\linewidth}
+	Mailing address:\\
+	52 rue du Faubourg Poissonniere \\
+	Paris 75010, France
+\end{minipage}
+\begin{minipage}{0.45\linewidth}
+  \begin{tabular}{ll}
+    Phone: & (+33) 0670655238 \\
+    Email: & \href{mailto:alexpak@limsi.fr}{\tt alexpak@limsi.fr}\\
+	       & \href{mailto:irokez@gmail.com}{\tt irokez@gmail.com}
+  \end{tabular}
+\end{minipage}
+
+\vspace{2em}
+Research interests: sentiment analysis, opinion mining, information retrieval, natural language processing
+
+\section*{Personal}
+
+\begin{itemize}
+\item Birthday: July 10, 1986.
+\item Nationality: Uzbekistan
+\end{itemize}
+
+
+\section*{Education}
+
+\begin{table}[h]
+	\begin{tabular}{ll}
+	\parbox[t]{5cm}{
+		2009 -- 2012 (expected) \\
+		Ph.D. Computer Science
+	} &
+	\parbox[t]{15cm}{
+    	University Paris-Sud 11\\
+		LIMSI-CNRS lab, supervisor: Patrick Paroubek\\
+		Thesis: ``Adaptive Opinion Mining'', project DOXA\\
+		Orsay, France
+		\vspace{1em}
+    } \\
+	\parbox[t]{5cm}{
+		2007 -- 2009 \\
+		M.S. Computer Science
+	} &
+	\parbox[t]{15cm}{
+		Korea Advanced Institute of Science and Technology\\
+		Information Systems lab, supervisor: Prof. Chung, Chin-Wan \\
+		Thesis: ``An Effective Contextual Advertising using Wikipedia Matching''\\
+		Taejon, Republic of Korea
+%        Graduated with an Excellence Thesis Award
+		\vspace{1em}
+    } \\
+    \parbox[t]{5cm}{
+		2003 -- 2007 \\
+		B.S. Computer Science
+	} &
+	\parbox[t]{15cm}{
+		Tashkent University of Information Technologies\\
+		Tashkent, Uzbekistan
+    } \\    
+    \end{tabular}
+\end{table}
+
+\subsection*{Summer schools}
+\begin{itemize}
+\item First European Business Intelligence Summer School (eBISS 2011)
+\item European Summer School in Logic, Language and Information (ESSLLI 2010)
+\end{itemize}
+
+\section*{Publications}
+
+\subsection*{International Journals}
+
+\begin{itemize}
+
+\item Alexander Pak, Delphine Bernhard, Patrick Paroubek, Cyril Grouin, ``A Combined Approach to Emotion Detection in Suicide Notes'' to appear in {\it Biomedical Informatics Insights}
+
+\item Alexander Pak, Chin-Wan Chung, ``A Wikipedia Matching Approach to Contextual
+Advertising'' {\it World Wide Web}, 2009. Volume 13, Number 3, 251--274, DOI:
+10.1007/s11280-010-0084-2.
+
+\end{itemize}
+
+\subsection*{Domestic Journals}
+
+\begin{itemize}
+\item Alexander Pak, Patrick Paroubek, ``Le microblogage pour la microanalyse des
+sentiments et des opinions'' {\it Traitement Automatique des Langues}, 2010, vol. 51.3 (pp 75--100).\\
+English title: ``Micro blogging for micro sentiment analysis''
+\end{itemize}
+
+
+\subsection*{International conferences}
+
+\begin{itemize}
+
+\item Alexander Pak, Patrick Paroubek, ``Normalization of Term Weights for Sentiment Analysis'' to appear at LTC 2011
+
+\item Alexander Pak, Patrick Paroubek, ``Twitter as a Corpus for Sentiment Analysis and Opinion Mining'', 
+{\it LREC 2010. Seventh International Conference on Language Resources and Evaluation}, 
+Valetta, Malta: 2010. -6p
+
+\item Patrick Paroubek, Alexander Pak, Djamel Mostefa, ``Annotations for opinion mining evaluation in the industrial context of the DOXA project'', 
+{\it LREC 2010. Seventh International Conference on Language Resources and Evaluation}, 
+Valetta, Malta: 2010. -6p
+
+\item Alexander Pak, ``Using Wikipedia to Improve Precision of Contextual Advertising'', {\it LTC 2009. Lecture Notes in Computer Science}, 
+2011, Volume 6562/2011, 533-543, DOI: 10.1007/978-3-642-20095-3\_49\\
+Best Student Paper award
+
+\end{itemize}
+
+\subsection*{Domestic conferences}
+
+\begin{itemize}
+
+\item Alexander Pak, Patrick Paroubek, ``Sentiment Polarity Classification using Dependency Tree Subgraphs Text Representation'' {\it TALN 2011. 18\`eme Conf\'erence sur le Traitement Automatique des Langues Naturelles}, Montpelier, France: 2011. -6p
+
+\item Alexander Pak, Patrick Paroubek, ``Constructing French Affective Lexicon using Twitter'', {\it TALN 2010. 17\`eme Conf\'erence sur le Traitement Automatique des Langues Naturelles}, Montr\'eal, Canada : 2010. - 6p
+
+\end{itemize}
+
+\subsection*{International workshops}
+
+\begin{itemize}
+
+\item Alexander Pak, Delphine Bernhard, Patrick Paroubek, Cyril Grouin, ``Emotion Detection in Clinical Reports. The LIMSI participation in the i2b2 2011/VA
+Challenge'' to appear at I2B2, AMIA 2011
+
+\item Alexander Pak, Patrick Paroubek, ``Twitter for Sentiment Analysis: When Language Resources are Not Available,'' DEXA, 2011 {\it 22nd International Workshop on Database and Expert Systems Applications}, Toulouse, France: pp.111--115
+
+\item Alexander Pak, Patrick Paroubek. 2010. ``Twitter Based System: Using Twitter for Disambiguating Sentiment Ambiguous Adjectives''. {\it In Proceedings of the 5th
+International Workshop on Semantic Evaluation (SemEval '10). Association for
+Computational Linguistics}, Uppsala, Sweden: 436--439
+
+\item Alexander Pak, Patrick Paroubek, ``Text Representation using Dependency Tree
+Subgraphs for Sentiment Analysis'', {\it DASFAA 2011. The 16th International Conference on Database Systems for Advanced Applications. In proceedings of Database Systems for Adanced Applications}, Xu J.,Yu G., Zhou S., Unland R., Lecture Notes in Computer Science vol 6637, Hong Kong, China: 2011. 323--332
+
+\end{itemize}
+
+\section*{Talks}
+
+\begin{itemize}
+
+\item Alexander Pak, ``Adaptive Sentiment Analysis'' at Clunch 2011, University of
+Pennsylvania, Philadelphia, PA, USA.
+
+\end{itemize}
+
+\section*{Employment}
+
+\begin{table}[h]
+	\begin{tabular}{ll}
+	\parbox[t]{5cm}{
+		May 2007 -- Aug 2007 \\
+		full time
+	} &
+	\parbox[t]{15cm}{
+		Center of Economic Research \\
+    	United Nations Development Programme Project (UNDP)\\
+		IT coordinator
+		\vspace{1em}
+    } \\
+	\parbox[t]{5cm}{
+		Mar 2006 -- May 2007 \\
+		contract work
+	} &
+	\parbox[t]{15cm}{
+		Center of Economic Research \\
+    	United Nations Development Programme Project (UNDP)\\
+		Software developer
+		\vspace{1em}
+    } \\
+    \parbox[t]{5cm}{
+		Dec 2005 -- Mar 2006\\
+		part-time
+	} &
+	\parbox[t]{15cm}{
+		Erava Group LLC\\
+		Project manager
+		\vspace{1em}
+    } \\    
+    \parbox[t]{5cm}{
+		Jun 2004 -- Dec 2005\\
+		part-time
+	} &
+	\parbox[t]{15cm}{
+		Erava Group LLC\\
+		Software developer
+    } \\
+    \end{tabular}
+\end{table}
+
+\section*{Awards and Honors}
+
+\begin{itemize}
+
+\item Best Student Paper award at LTC'09 in Poznan, Poland for paper ''Using Wikipedia to Improve Precision of Contextual Advertising''
+
+\item Excellence Thesis Award at Korea Advanced Institute of Science and Technology
+
+\item First place in Ericsson open student contest for best business idea of SIP application 2006
+
+\item Participation in Google Summer of Code 2006 program
+
+\end{itemize}
+
+
+\section*{Personal projects}
+
+\begin{itemize}
+
+\item Pyrus: NLP toolkit for Russian in Python3: \url{https://github.com/irokez/Pyrus}
+\item 42goals: a simple tool for tracking daily goals: \url{http://42goals.com} \\
+(finalist at Mini Seedcamp Weekend in Berlin 2010)
+\item Worktrek: online productivity calendar and planning: \url{http://worktrek.com}
+\item Irokez CMS: opensource content management system: \url{http://irokez.org}
+
+\end{itemize}
+
+\section*{Technical expertise}
+\begin{itemize}
+\item Programming languages: JavaScript, PHP, Python, C++, R, Perl, Pascal, Java
+\item Database management systems: MySQL, PostgreSQL, SQLite
+\item Markup languages: HTML, XML, LaTeX
+\item Operating systems: MS Windows, Linux Debian, Ubuntu
+\end{itemize}
+
+\section*{Spoken languages}
+\begin{itemize}
+\item Russian: native
+\item English: fluent (TOEFL iBT score, taken in 2007: 105/110)
+\item French: intermediate
+\item German, Korean, Chinese: beginner
+\end{itemize}
+
+\end{document}
